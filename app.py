@@ -3,7 +3,7 @@ import joblib
 import numpy as np
 import pandas as pd
 
-model = joblib.load("artifacts/model.pkl")
+model = joblib.load("model.pkl")
 
 def main():
     st.set_page_config(page_title="Heart Disease Predictor", layout="centered")
@@ -49,4 +49,5 @@ def main():
             st.success(f"Resiko Rendah (Probabilitas: {prob_sakit:.2%})")
 
 if __name__ == '__main__':
+
     main()
